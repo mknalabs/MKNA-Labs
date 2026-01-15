@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MKNA Labs – Micro-Influencer Agency</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root{--emerald:#10B981;--dark:#111827;--light:#f5f5f5;}
+    *{box-sizing:border-box;margin:0;font-family:'Segoe UI',Arial,sans-serif;}
+    body{color:var(--dark);background:var(--light);}
+    header{background:var(--dark);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;}
+    header .logo{color:#fff;font-size:1.4rem;font-weight:bold;}
+    nav a{color:#fff;margin-left:1.5rem;text-decoration:none;}
+    .hero{text-align:center;padding:4rem 1rem;background:#fff;}
+    .hero h1{font-size:2.2rem;margin-bottom:1rem;}
+    .hero p{font-size:1.1rem;margin-bottom:2rem;}
+    .btn{background:var(--emerald);color:#fff;padding:.75rem 1.5rem;border:none;border-radius:4px;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;}
+    .section{padding:3rem 1rem;max-width:1000px;margin:auto;}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;}
+    .card{background:#fff;padding:1.5rem;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.08);}
+    .roster{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;}
+    .roster img{width:120px;height:120px;object-fit:cover;border-radius:4px;}
+    form{display:grid;gap:1rem;max-width:500px;margin:auto;}
+    input,textarea,select{width:100%;padding:.6rem;border:1px solid #ccc;border-radius:4px;}
+    footer{background:var(--dark);color:#fff;text-align:center;padding:1.5rem;font-size:.9rem;}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">MKNA Labs</div>
+  <nav>
+    <a href="#creators">Creators</a>
+    <a href="#brands">Brands</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Where Micro-Creators Meet Big Results</h1>
+  <p>5-100 k follower influencers • 6 % avg engagement • 14-day payouts<br>One brief, one invoice, zero hassle.</p>
+  <a class="btn" href="https://calendly.com/yourname/15min" target="_blank">Book a Strategy Call</a>
+</section>
+
+<section id="brands" class="section">
+  <h2>For Brands</h2>
+  <div class="cards">
+    <div class="card"><h3>Starter</h3><p>10 creators, 30 posts</p><p><strong>$3 k</strong> + 10 % fee</p></div>
+    <div class="card"><h3>Scale</h3><p>30 creators, 90 posts</p><p><strong>$9 k</strong> + 10 % fee</p></div>
+    <div class="card"><h3>Always-On</h3><p>Monthly retainer</p><p><strong>$5 k</strong>/mo</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Creator Roster Preview</h2>
+  <div class="roster">
+    <img src="https://source.unsplash.com/random/400x400?face" alt="creator1">
+    <img src="https://source.unsplash.com/random/400x400?girl" alt="creator2">
+    <img src="https://source.unsplash.com/random/400x400?portrait" alt="creator3">
+    <img src="https://source.unsplash.com/random/400x400?boy" alt="creator4">
+    <img src="https://source.unsplash.com/random/400x400?selfie" alt="creator5">
+    <img src="https://source.unsplash.com/random/400x400?teen" alt="creator6">
+  </div>
+  <p style="text-align:center;margin-top:1rem;">127 vetted micro-influencers • 4.8 % avg engagement</p>
+</section>
+
+<section id="creators" class="section">
+  <h2>For Creators</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="text" name="handle" placeholder="TikTok / IG Handle" required>
+    <input type="number" name="followers" placeholder="Follower Count" required>
+    <select name="niche" required>
+      <option value="">Select Niche</option>
+      <option>Eco / Sustainability</option>
+      <option>BookTok</option>
+      <option>Pickleball</option>
+      <option>AI Tools</option>
+    </select>
+    <input type="url" name="kit" placeholder="Media-Kit Link (Google Drive)">
+    <button class="btn" type="submit">Apply to Roster</button>
+  </form>
+</section>
+
+<section id="contact" class="section">
+  <h2 style="text-align:center;">Contact</h2>
+  <p style="text-align:center;">Email: hello@mknalabs.com | <a class="btn" href="https://calendly.com/yourname/15min" target="_blank">Book a Call</a></p>
+</section>
+
+<footer>
+  © 2026 MKNA Labs – Micro-Influencer Agency
+</footer>
+</body>
+</html>
